@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/mainRecyclerView_Item_CardView_Article"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:layout_marginTop="@dimen/Article_CardView_TopMargin"
+    android:layout_marginStart="@dimen/Article_CardView_StartMargin"
+    android:layout_marginEnd="@dimen/Article_CardView_EndMargin">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@id/mainRecyclerView_Item_ConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@id/mainRecyclerView_Item_TextView_ArticleSection"
+                style="@style/TextView.ArticleSection"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/mainRecyclerView_Item_View_Separate_Upper"
+                android:text="Section" />
+
+            <View
+                android:id="@id/mainRecyclerView_Item_View_Separate_Upper"
+                style="@style/VerticalSeparateView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mainRecyclerView_Item_TextView_ArticleSection"
+                app:layout_constraintBottom_toTopOf="@id/mainRecyclerView_Item_TextView_ArticleTitle"/>
+
+            <TextView
+                android:id="@id/mainRecyclerView_Item_TextView_ArticleTitle"
+                style="@style/TextView.ArticleTitle"
+                android:text="Title"
+                app:layout_constraintBottom_toTopOf="@id/mainRecyclerView_Item_TextView_CreatedTime"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mainRecyclerView_Item_View_Separate_Upper" />
+
+
+            <TextView
+                android:id="@id/mainRecyclerView_Item_TextView_CreatedTime"
+                style="@style/TextView.CreatedTime"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mainRecyclerView_Item_TextView_ArticleTitle"
+                android:text="CreatedTime" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

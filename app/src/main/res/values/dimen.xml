@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="Article_CardView_EndMargin">10dp</dimen>
+    <dimen name="Article_CardView_StartMargin">10dp</dimen>
+    <dimen name="Article_CardView_TopMargin">10dp</dimen>
+    <dimen name="Article_CardView_RelativeLayout_Padding">8dp</dimen>
+
+    <dimen name="Article_View_Separate_HorizontalMargin">8dp</dimen>
+    <dimen name="Article_View_Separate_VerticalMargin">3dp</dimen>
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.MainActivity"
+    android:theme="@style/AppTheme">
+
+        <include layout="@layout/toolbar"/>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@id/mainSwipeRefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <!--Если @string/appbar_scrolling_view_behavior подсвечивается как unresolved (выделено красным),
+            то можно спокойно запусать - проблем не будет. Не понимаю почему unresolved, хотя без этой строки
+            (а она дефолтная, системная) ничего не работает. По идее эта строка уже существует и должна быть доступна,
+            и, даже при том что она работает в коде, - тут она unresolved.-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@id/mainRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                tools:listitem="@layout/times_newswire_item"/>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="mainSwipeRefresh"/>
+
+    <item type="id" name="mainRecyclerView"/>
+    <item type="id" name="mainRecyclerView_Item_CardView_Article"/>
+    <item type="id" name="mainRecyclerView_Item_TextView_ArticleTitle"/>
+    <item type="id" name="mainRecyclerView_Item_View_Separate_Upper"/>
+    <item type="id" name="mainRecyclerView_Item_TextView_ArticleSection"/>
+    <item type="id" name="mainRecyclerView_Item_TextView_CreatedTime"/>
+
+    <item type="id" name="mainRecyclerView_Item_RelativeLayout"/>
+    <item type="id" name="mainRecyclerView_Item_ConstraintLayout"/>
+
+    <item type="id" name="webView"/>
+
+    <item type="id" name="toolbar"/>
+
+    <item type="id" name="searchArticlesMainActivityMenuItem"/>
+    <item type="id" name="favoriteSectionsMainActivityMenuItem"/>
+</resources>

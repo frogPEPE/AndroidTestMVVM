@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@id/searchArticlesMainActivityMenuItem"
+        android:icon="@mipmap/search_icon"
+        android:title="@string/mainActivity_MenuItemTitle_SearchArticles"
+        yourapp:actionViewClass="androidx.appcompat.widget.SearchView"
+        yourapp:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@id/favoriteSectionsMainActivityMenuItem"
+        android:title="@string/mainActivity_MenuItemTitle_FavoriteSections"
+        android:icon="@mipmap/favorite_icon"
+        yourapp:showAsAction="ifRoom" />
+</menu>

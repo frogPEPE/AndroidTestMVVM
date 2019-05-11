@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Times News Wire</string>
+
+    <string name="TNW_API_KEY">ЗДЕСЬ ДОЛЖЕН БЫТЬ ВАШ КЛЮЧ</string>
+
+    <string name="mainActivity_Application_Offline">Соединение с интернетом отсутствует.</string>
+
+    <string name="mainRecyclerView_Item_ImageView_Description">The New York Times:</string>
+    <string name="mainRecyclerView_Item_Update_Toast">Обновлена статья</string>
+
+    <string name="API_Articles_Response_Error">Произошла ошибка при обновлении списка статей New York Times.</string>
+    <string name="API_Sections_Response_Error">Произошла ошибка при обновлении списка секций New York Times.</string>
+
+    <string name="article_Of_Favorite_Section_Published">Новая публикация в секции:</string>
+
+    <string name="webView_Title">New York Times</string>
+    <string name="webView_Default_URL">https://www.google.com</string>
+
+    <string name="search_Hint">Поиск статей…</string>
+
+    <string name="mainActivity_MenuItemTitle_FavoriteSections">Избранные статьи</string>
+    <string name="mainActivity_MenuItemTitle_SearchArticles">Поиск…</string>
+</resources>
